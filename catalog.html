@@ -1,111 +1,102 @@
-
-  	<!DOCTYPE html>
-    <html>
-    <head>
-      <meta charset="utf-8" lang="ru">
-      <title>HTML Academy: Седон</title>
-    </head>
-    <body>
-      <header class="main-header">
-      <section class="navigation">
-         <img src="#" alt="Логотип Седона">
-        <h1> Навигация по сайту</h1>
-        <img src="#" class="intro" alt="Логотип Седона">
-        <nav class="main-nav">
-          <ul>
-            <li> Информация</li>
-            <li>Фото и Видео</li>
-            <li>Карта штата</li>
-            <li>Гостиницы</li>
-          </ul>
-        </nav>
-      </section>
-      </header>
-      <section class="target">
-        <img src="#" alt="Фоновое изображение поиска">
-        <ul class="infrastructure">
-          <h2>Инфраструктура:</h2>
-          <!-- формы можно сделать через <input type="" name=""> -->
-          <li>Бассеин</li>
-          <li>Парковка</li>
-          <li>WI-FI</li>
-        </ul>
-        <ul class="type-home">
-          <!-- подписывать с помощью CAPSLOCK или оформление CSS -->
-          <h2>ТИП ЖИЛЬЯ:</h2>
-          <li>Гостиница</li>
-          <li>Мотель</li>
-          <li>Апартаменты</li>
-        </ul>
-       <div class="search">
-         <h2>СТОИМОСТЬ В СУТКИ(Р):</h2>
-         <form class="range">ДО 0 ДО 3000</form>
-         <span class="slider"></span>
-         <button>Показать</button>
-       </div>
-      </section>
-      <main class="main-catalog">
-        <section class="main-filter">
-          <ul class="filter">
-            <li>Найдено:3</li>
-            <li>Сортировка:</li>
-            <!-- сделать кнопками либо ссылками -->
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По рейтингу</li>
-            <li>
-              <BUTTON></BUTTON>
-              <BUTTON></BUTTON>
-            </li>
-          </ul>
-        </section>
-        <section class="results">
-          <img src="#" alt="Amara Resort & Spa">
-          <section class="1">
-            <h2>Amara Resort & Spa</h2>
-            <ul class="#">
-              <li>Гостиница</li>
-              <li>От 4000 р.</li>
-              <button class="info">ПОДРОБНЕЕ</button>
-              <button class="booking">ЗАБРОНИРОВАТЬ</button>
-              <span class="rate"></span>
-              <span class="rating">РЕЙТИНГ: 8.5</span>
-            </ul>
-          </section>
-          <section class="2">
-             <ul class="#">
-              <h2>Desert Quail Inn</h2>
-              <li>Мотель</li>
-              <li>От 3000 р.</li>
-              <button class="info">ПОДРОБНЕЕ</button>
-              <button class="booking">ЗАБРОНИРОВАТЬ</button>
-              <span class="rate"></span>
-              <span class="rating">РЕЙТИНГ: 8.9</span>
-            </ul>
-          </section>
-          <section class="3">
-             <ul class="#">
-              <h2>Villas at Poco Diablo</h2>
-              <li>Аппартаменты</li>
-              <li>От 2000 р.</li>
-              <button class="info">ПОДРОБНЕЕ</button>
-              <button class="booking">ЗАБРОНИРОВАТЬ</button>
-              <span class="rate"></span>
-              <span class="rating">РЕЙТИНГ: 9.2</span>
-            </ul>
-          </section>
-        </section>
-      </main>
-      <footer class="main-footer">
-        <b>#visitSEDONA</b>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Седона</title>
+</head>
+<body>
+  <header class="navigation">
+    <nav>
+     <ul>
+      <li>Информация</li>
+      <li>Фото и Видео</li>
+      <li>Карта штата</li>
+      <li>Гостиницы</li>
+     </ul>
+    </nav>
+  </header>
+  <main>
+    <form action="" class=""></form>
+    <section class=user-sort">
+     <div class="result-number">
+      <span>3</span>
+      <span>Сортировка:</span>
       <ul>
-        <!-- расставить кнопки для LI -->
-        <li><a href="#"><img src="#" alt="Twitter"></a></li>
-        <li><a href=""><img src="#" alt="Facebook"></a></li>
-        <li><a href=""><img src="#" alt="Yotube"></a></li>
+        <li>По цене</li>
+        <li>По типу</li>
+        <li>По рейтингу</li>
       </ul>
-      <a href="#"><P>Website by <img src="#" class="Логотип HTML Academy"></P></a>
-    </footer>
-      </footer>
-    </body>
-    </html>
+      <ul class="arrow">
+        <li class="up"></li>
+        <li class="down"></li>
+      </ul>
+     </div>
+    </section>
+    <ul class="search-results">
+    <li class="search-result-item">
+          <img src="#" alt="">
+        <div class="info">
+            <h2>Amara resort & Spa</h2>
+        <div class="left-col">
+          <p>Гостиница</p>
+          <a href="#">Подробнее</a>
+        </div>
+        <div class="right-col">
+          <p>От 4000 р.</p>
+          <a href="#">Забронировать</a>
+        </div>
+        <div class="rating">
+          <p>Рейтинг:8,5</p>
+        </div>
+        </div>
+     </li>
+      <li class="search-result-item">
+        <img src="#" alt="">
+        <div class="info">
+          <h2>Desert Quail Inn</h2>
+          <div class="left-col">
+            <p>Мотель</p>
+            <a href="#">Подробнее</a>
+          </div>
+          <div class="right-col">
+            <p>От 3000 р.</p>
+            <a href="#">Забронировать</a>
+          </div>
+          <div class="rating">
+            <p>Рейтинг:8,9</p>
+          </div>
+        </div>
+      </li>
+      <li class="search-result-item">
+        <img src="" alt="">
+        <div class="info">
+          <h2>Villas at Poco Diablo</h2>
+          <div class="left-col">
+            <p>Аппартаменты</p>
+            <a href="#">Подробнее</a>
+          </div>
+          <div class="right-col">
+            <p>От 2000 р.</p>
+            <a href="#">Забронировать</a>
+          </div>
+          <div class="rating">
+            <p>Рейтинг:9,2</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </main>
+</body>
+<footer class="#">
+  <span class="label">#visitsedona</span>
+    <!-- прописать по доступности названия -->
+  <ul class="socials">
+      <li class="socials-item"></li>
+      <li class="socials-item"></li>
+      <li class="socials-item"></li>
+  </ul>
+  <section class="copyright">
+    <p>Website by<a href="http://htmlacademy.ru/" target="_blank"></a></p>
+  </section>
+</footer>
+</html>
