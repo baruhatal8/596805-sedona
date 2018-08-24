@@ -22,38 +22,38 @@
       <ul>
         <h3 class="search-title">Инфраструктура:</h3>
         <li class="search-item">
-          <input type="checkbox" id="pool">
+          <input type="checkbox" id="pool" name="pool">
           <label for="pool">Бассейн</label>
         </li>
         <li class="search-item">
-          <input type="checkbox" id="parking">
+          <input type="checkbox" id="parking" name="parking">
           <label for="parking">Парковка</label>
         </li>
         <li class="search-item">
-          <input type="checkbox" id="Int">
+          <input type="checkbox" id="Int" name="Int">
           <label for="Int">Wi-Fi</label>
         </li>
       </ul>
       <ul>
         <h3 class="search-title">Тип жилья:</h3>
         <li class="search-item">
-          <input type="checkbox" id="hotel">
+          <input type="checkbox" id="hotel" name="hotel">
           <label for="motel">Гостиница</label>
         </li>
         <li class="search-item">
-          <input type="checkbox" id="motel">
+          <input type="checkbox" id="motel" name="motel">
           <label for="motel">Мотель</label>
         </li>
         <li class="search-item">
-          <input type="checkbox" id="Aprtt">
+          <input type="checkbox" id="Aprtt" name="Aprtt">
           <label for="Aprtt">Апартаменты</label>
         </li>
       </ul>
-          <section>
-            Стоимость в сутки в (р):
-            <!-- output при условии если ввод только через фильтр -->
-            <output>от 0</output><input type="range" name="filter" min="1" max="5000" step="1"><output>до 5000</output> 
-            <button>Показать</button>
+          <section class="filters">
+            <h3 class="filters-title">Стоимость в сутки в (р):<h3>
+            <!-- output при условии если ввод только через фильтр  -->
+            <div class="filter-number"><output>от 0</output><input type="range" name="filter" min="1" max="5000" step="1"><output>до 5000</output></div>
+            <button class="filter-btn">Показать</button>
           </section>
     </form>
     <section class=user-sort">
