@@ -5,39 +5,78 @@
   <title>HTML Academy: Седона</title>
 </head>
 <body>
-  <header class="navigation">
-   <nav class="navigation">
+  <div class="page-wrapper">
+  <header class="page-header">
+    <nav class="navigation">
       <ul class="main-nav">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и Видео</a></li>
         <li><a href="#">Карта штата</a></li>
-        <li><a href="#">Гостиницы</a></li>
+        <li><a class="current-page" href="" ">Гостиницы</a></li>
       </ul>
     </nav>
+    <div class="logo"><img src="#" alt="Логотип"></div>
   </header>
   <main>
-    <form action="" class=""></form>
+    <form action="echo.htmlacademy.ru" class="search-info" method="post">
+      <ul>
+        <h3 class="search-title">Инфраструктура:</h3>
+        <li class="search-item">
+          <input type="checkbox" id="pool">
+          <label for="pool">Бассейн</label>
+        </li>
+        <li class="search-item">
+          <input type="checkbox" id="parking">
+          <label for="parking">Парковка</label>
+        </li>
+        <li class="search-item">
+          <input type="checkbox" id="Int">
+          <label for="Int">Wi-Fi</label>
+        </li>
+      </ul>
+      <ul>
+        <h3 class="search-title">Тип жилья:</h3>
+        <li class="search-item">
+          <input type="checkbox" id="hotel">
+          <label for="motel">Гостиница</label>
+        </li>
+        <li class="search-item">
+          <input type="checkbox" id="motel">
+          <label for="motel">Мотель</label>
+        </li>
+        <li class="search-item">
+          <input type="checkbox" id="Aprtt">
+          <label for="Aprtt">Апартаменты</label>
+        </li>
+      </ul>
+          <section>
+            Стоимость в сутки в (р):
+            <!-- output при условии если ввод только через фильтр -->
+            <output>от 0</output><input type="range" name="filter" min="1" max="5000" step="1"><output>до 5000</output> 
+            <button>Показать</button>
+          </section>
+    </form>
     <section class=user-sort">
      <div class="result-number">
-      <span>Найдено:</span>
-      <span>3</span>
-      <span>Сортировка:</span>
+      <p class="result-text">Найдено:<output>3</output></p>
+      
+      <p>Сортировка:</p>
       <ul class="sorting">
-        <li><a href="#">По цене</a></li>
-        <li><a href="#">По типу</a></li>
-        <li><a href="#">По рейтингу</a></li>
+        <li><a href="#"  rel="nofolow">По цене</a></li>
+        <li><a href="#"  rel="nofolow">По типу</a></li>
+        <li><a href="#"  rel="nofolow">По рейтингу</a></li>
       </ul>
-      <ul class="arrow">
-        <li class="up"></li>
-        <li class="down"></li>
+      <ul class="arrows">
+        <li><a href="#" rel="nofolow" class="arrows up"></a></li>
+        <li><a href="#" rel="nofolow" class="arrows down"></a></li>
       </ul>
-     </div>
-    </section>
-    <ul class="search-results">
+    </div>
+  </section>
+  <ul class="search-results">
     <li class="search-result-item">
-          <img src="#" alt="">
-        <div class="info">
-            <h2>Amara resort & Spa</h2>
+      <img src="#" alt="">
+      <div class="info">
+        <h2>Amara resort & Spa</h2>
         <div class="left-col">
           <p>Гостиница</p>
           <a href="#">Подробнее</a>
@@ -47,63 +86,61 @@
           <a href="#">Забронировать</a>
         </div>
         <div class="rating">
-           <!-- звезды -->
-          <p>Рейтинг:8,5</p>
-        </div>
-        </div>
-     </li>
-     <hr> 
-      <li class="search-result-item">
-        <img src="#" alt="">
-        <div class="info">
-          <h2>Desert Quail Inn</h2>
-          <div class="left-col">
-            <p>Мотель</p>
-            <a href="#">Подробнее</a>
-          </div>
-          <div class="right-col">
-            <p>От 3000 р.</p>
-            <a href="#">Забронировать</a>
-          </div>
-          <div class="rating">
-             <!-- звезды -->
-            <p>Рейтинг:8,9</p>
-          </div>
-        </div>
-      </li>
-      <hr>
-      <li class="search-result-item">
-        <img src="" alt="">
-        <div class="info">
-          <h2>Villas at Poco Diablo</h2>
-          <div class="left-col">
-            <p>Аппартаменты</p>
-            <a href="#">Подробнее</a>
-          </div>
-          <div class="right-col">
-            <p>От 2000 р.</p>
-            <a href="#">Забронировать</a>
-          </div>
-          <div class="rating">
-            <!-- звезды -->
-            <p>Рейтинг:9,2</p>
-          </div>
-        </div>
-      </li>
-      <hr>
-    </ul>
-  </main>
-</body>
-<footer class="#">
-  <span class="label">#visitsedona</span>
-    <!-- прописать по доступности названия -->
-    <ul class="socials">
-      <li class="socials-item"></li>
-      <li class="socials-item"></li>
-      <li class="socials-item"></li>
-    </ul>
-    <section class="copyright">
-      <p>Website by<a href="https://up.htmlacademy.ru/htmlcss/22" target="blank"></a></p>
-    </section>
+         <!-- звезды -->
+         <p>Рейтинг:8,5</p>
+       </div>
+     </div>
+   </li>
+   <li class="search-result-item">
+    <img src="#" alt="">
+    <div class="info">
+      <h2>Desert Quail Inn</h2>
+      <div class="left-col">
+        <p>Мотель</p>
+        <a href="#">Подробнее</a>
+      </div>
+      <div class="right-col">
+        <p>От 3000 р.</p>
+        <a href="#">Забронировать</a>
+      </div>
+      <div class="rating">
+       <!-- звезды -->
+       <p>Рейтинг:8,9</p>
+     </div>
+   </div>
+ </li>
+ <li class="search-result-item">
+  <img src="" alt="">
+  <div class="info">
+    <h2>Villas at Poco Diablo</h2>
+    <div class="left-col">
+      <p>Аппартаменты</p>
+      <a href="#">Подробнее</a>
+    </div>
+    <div class="right-col">
+      <p>От 2000 р.</p>
+      <a href="#">Забронировать</a>
+    </div>
+    <div class="rating">
+      <!-- звезды -->
+      <p>Рейтинг:9,2</p>
+    </div>
+  </div>
+</li>
+</ul>
+</main>
+<footer class="page-footer">
+  <p class="hashtag">#visitsedona</p>
+  <!-- прописать по доступности названия -->
+  <ul class="socials">
+    <li class="socials-item"><a href=""></a></li>
+    <li class="socials-item"><a href=""></a></li>
+    <li class="socials-item"><a href=""></a></li>
+  </ul>
+  <section class="copyright">
+    <p>Website by<a href="https://up.htmlacademy.ru/htmlcss/22" target="_blank"></a></p>
+  </section>
 </footer>
+</div>
+</body>
 </html>
