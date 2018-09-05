@@ -6,20 +6,22 @@
 </head>
 <body class="page">
 	<div class="page-wrapper">
-		<header class="page-header">
-			<nav class="navigation">
-				<ul class="main-nav">
-					<li><a href="#">Информация</a></li>
-					<li><a href="#">Фото и Видео</a></li>
-					<li><a href="#">Карта штата</a></li>
-					<li><a href="#">Гостиницы</a></li>
-				</ul>
-			</nav>
-			<div class="logo"><img src="#" alt="Логотип"></div>
-		</header>
+	<header class="page-header">
+      <nav class="navigation">
+        <ul class="main-nav">
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и Видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a class="current-page" href="">Гостиницы</a></li>
+        </ul>
+      </nav>
+      <div class="logo"><img src="img/logo.svg" width="140" height="72" alt="Седона"></div>
+    </header>
 		<main class="main-content">
 			<div class="promo">
-				<img src="#" alt="Фото каньона" class="promo-wrapper">
+				<!-- img/intro-wrapper.svg как с ним быть? -->
+				<img src="img/promo-wrapper.jpg" width="1200" height="773" alt="Фото каньона" class="promo-wrapper">
+				<img src="img/polygon.svg" widht="1201" height="59" alt="маска">
 			</div>
 			<h2 class="page-title">Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
 			<p class="page-subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -31,20 +33,23 @@
 							<p class="info-number">— №1 —</p>
 							<p class="info-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
 						</div>
-						<div class="image-wrapper"></div>
+						<div class="image-wrapper"><img src="img/city.jpg" width="800" height="400" alt="Городок"></div>
 					</section>
 					<ul class="advantages">
 						<li class="advantages-item house">
+							<img src="img/home.svg" width="75" height="72" alt="Домик"> 
 							<h3 class="house info-title">Жилье</h3> 
-							<p class="house info-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p> 
+							<p class="house info-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 						</li>
 						<li class="advantages-item food">
+							<img src="img/burger.svg" width="74" height="70" alt="Бургер"> 
 							<h3 class="food info-title">Еда</h3>
-							<p class="food info-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p> 
+							<p class="food info-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 						</li>
 						<li class="advantages-item presents">
+							<img src="img/present.svg" width="64" height="76" alt="Сувениры"> 
 							<h3 class="presents info-title">Сувениры</h3>
-							<p class="presents info-text">Не только китайского, но и местного производства!</p>  
+							<p class="presents info-text">Не только китайского, но и местного производства!</p>
 						</li>
 					</ul>
 				</li>
@@ -56,7 +61,7 @@
 							<p class="info-number">— №2 —</p>
 							<p class="info-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p> 
 						</div>
-						<div class="image-wrapper"></div>
+						<div class="image-wrapper"><img src="img/canyon.jpg" width="800" height="400" alt="Каньон"></div>
 					</section>
 				</li>
 				<!-- исправить нумерацию -->
@@ -83,31 +88,38 @@
 				<form action="echo.htmlacademy.ru" method="post" class="search-info">
 					<!-- label всегда перед input ? -->
 					<!-- его как pop-up устанавливать в конец ?  -->
-					<label for="in">Дата заезда</label>
-					<input type="date" name="in">
-					<label for="out">Дата выезда</label>
-					<input type="date" name="out">
-					<label for="adult">Взрослые</label>
+					<!-- у label for или ID? И еще должно быть hidden&  -->
+					<!-- исправил for на ID -->
+					<!-- как в input внедрить календарик ? -->
+					<label id="coming">Дата заезда</label> 
+					<div class="calendar"><input type="date" name="coming"><img src="img/calendar.svg" width="21" height="22" alt="Календарик"></div>
+					<label id="from">Дата выезда</label>
+					<div class="calendar"><input type="date" name="coming"><img src="img/calendar.svg" width="21" height="22" alt="Календарик"></div>
+					<label id="adult">Взрослые</label>
+					<!-- ? + и- -->
 					<input type="number" name="adult">
-					<label for="in">Дети</label>
+					<label id="child">Дети</label>
+					<!-- ? + и- -->
 					<input type="number" name="child">
 					<button class="search-info btn">Найти</button>
 				</form>
 			</div>
 			<section class="map">
-
+				<!-- ? как уменьшить карту и вставитьк усочек? -->
+				<img src="img/map.png" width="1718" height="748" alt="Карта Седоны">
 			</section>
 		</main>
 		<footer class="page-footer">
 			<p class="hashtag">#visitsedona</p>
 			<!-- прописать по доступности названия -->
 			<ul class="socials">
-				<li class="socials-item"><a href=""></a></li>
-				<li class="socials-item"><a href=""></a></li>
-				<li class="socials-item"><a href=""></a></li>
+				<li class="socials-item"><img src="img/t.svg" width="17" height="15" alt="Twitter"><a href=""></a></li>
+				<li class="socials-item"><img src="img/f.svg" width="12" height="22" alt="Facebook"><a href=""></a></li>
+				<li class="socials-item"><img src="img/y.svg" width="20" height="16" alt="Youtube"><a href=""></a></li>
 			</ul>
 			<section class="copyright">
 				<p>Website by<a href="https://up.htmlacademy.ru/htmlcss/22" target="_blank"></a></p>
+				<img src="img/logo_name.svg" width="115" height="41" alt="HTML academy">
 			</section>
 		</footer>
 	</div>

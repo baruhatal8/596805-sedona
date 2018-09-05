@@ -12,69 +12,81 @@
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и Видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a class="current-page" href="" ">Гостиницы</a></li>
+          <li><a class="current-page" href="">Гостиницы</a></li>
         </ul>
       </nav>
-      <div class="logo"><img src="#" alt="Логотип"></div>
+      <div class="logo"><img src="img/logo.svg" width="140" height="72" alt="Седона"></div>
     </header>
     <main>
       <form action="echo.htmlacademy.ru" class="search-info" method="post">
+        <img src="img/filter_background.jpg" width="1200" height="562" alt="Бэкграунд">
         <ul>
-          <h3 class="search-title">Инфраструктура:</h3>
+          <li class="search-title">Инфраструктура:</li>
           <li class="search-item">
             <input type="checkbox" id="pool" name="pool">
-            <label for="pool">Бассейн</label>
+            <label for="pool"><img src="img/checkbox-on.svg" width="27" height="23" alt="Чек-бокс">Бассейн</label>
           </li>
           <li class="search-item">
             <input type="checkbox" id="parking" name="parking">
-            <label for="parking">Парковка</label>
+            <label for="parking"><img src="img/checkbox-off.svg" width="27" height="23" alt="Чек-бокс">Парковка</label>
           </li>
           <li class="search-item">
             <input type="checkbox" id="Int" name="Int">
-            <label for="Int">Wi-Fi</label>
+            <label for="Int"><img src="img/checkbox-off.svg" width="27" height="23" alt="Чек-бокс">Wi-Fi</label>
           </li>
         </ul>
         <ul>
-          <h3 class="search-title">Тип жилья:</h3>
+          <li class="search-title">Тип жилья:</li>
           <li class="search-item">
             <input type="checkbox" id="hotel" name="hotel">
-            <label for="hotel">Гостиница</label>
+            <label for="hotel"><img src="img/checkbox-on.svg" width="27" height="23" alt="Чек-бокс">Гостиница</label>
           </li>
           <li class="search-item">
             <input type="checkbox" id="motel" name="motel">
-            <label for="motel">Мотель</label>
+            <label for="motel"><img src="img/checkbox-on.svg" width="27" height="23" alt="Чек-бокс">Мотель</label>
           </li>
           <li class="search-item">
             <input type="checkbox" id="Aprtt" name="Aprtt">
-            <label for="Aprtt">Апартаменты</label>
+            <label for="Aprtt"><img src="img/checkbox-on.svg" width="27" height="23" alt="Чек-бокс">Апартаменты</label>
           </li>
         </ul>
         <section class="filters">
-          <h3 class="filters-title">Стоимость в сутки в (р):<h3>
+          <p class="filters-title">Стоимость в сутки в (р):<p>
             <!-- output при условии если ввод только через фильтр  -->
-            <div class="filter-number"><output>от 0</output><input type="range" name="filter" min="1" max="5000" step="1"><output>до 5000</output></div>
+             <!-- как внедрить две книпки в один поиск? -->
+            <div class="filter-number"><output><img src="img/filter-button.svg" width="20" height="22">от 0</output><input type="range" name="filter" min="1" max="5000" step="1"><output><img src="img/filter-button.svg" width="20" height="22">до 5000</output>
+            </div>
             <button class="filter-btn">Показать</button>
-          </section>
+        </section>
         </form>
-        <section class=user-sort">
+         <section class="user-sort">
          <div class="result-number">
           <p class="result-text">Найдено:<output>3</output></p>
 
           <p>Сортировка:</p>
           <ul class="sorting">
-            <li><a href="#"  rel="nofolow">По цене</a></li>
-            <li><a href="#"  rel="nofolow">По типу</a></li>
-            <li><a href="#"  rel="nofolow">По рейтингу</a></li>
+            <li><a href="#"  rel="nofollow">По цене</a></li>
+            <li><a href="#"  rel="nofollow">По типу</a></li>
+            <li><a href="#"  rel="nofollow">По рейтингу</a></li>
           </ul>
           <ul class="arrows">
-            <li><a href="#" rel="nofolow" class="arrows up"></a></li>
-            <li><a href="#" rel="nofolow" class="arrows down"></a></li>
+            <!-- не отображаются стрелочки, как исправить ? -->
+            <li>
+              <a href="#" rel="nofollow" class="arrows up">
+                <img src="img/icon-up-dir.svg" width="11" height="10" alt="Вверх">
+              </a>
+            </li>
+            <li>
+              <a href="#" rel="nofollow" class="arrows down">
+                <img src="img/icon-down-dir.svg" width="11" height="10" alt="Вниз">
+              </a>
+            </li>
           </ul>
         </div>
       </section>
       <ul class="search-results">
         <li class="search-result-item">
-          <img src="#" alt="">
+          <img src="img/amara.jpg" alt="Amara" width="135" height="135" width="90">
           <div class="info">
             <h2>Amara resort & Spa</h2>
             <div class="left-col">
@@ -86,13 +98,14 @@
               <a href="#">Забронировать</a>
             </div>
             <div class="rating">
-             <!-- звезды -->
+             <img src="img/star.svg" alt="Оценка" width="18" height="17">
+              <!-- звезды размножить-->
              <p>Рейтинг:8,5</p>
            </div>
          </div>
        </li>
        <li class="search-result-item">
-        <img src="#" alt="">
+        <img src="img/desert.jpg" alt="Desert" width="135" height="135" width="90">
         <div class="info">
           <h2>Desert Quail Inn</h2>
           <div class="left-col">
@@ -104,13 +117,14 @@
             <a href="#">Забронировать</a>
           </div>
           <div class="rating">
-           <!-- звезды -->
+           <!-- звезды размножить-->
+           <img src="img/star.svg" alt="Оценка" width="18" height="17">
            <p>Рейтинг:8,9</p>
          </div>
        </div>
      </li>
      <li class="search-result-item">
-      <img src="" alt="">
+      <img src="img/villas.jpg" alt="Villas" width="135" width="90">
       <div class="info">
         <h2>Villas at Poco Diablo</h2>
         <div class="left-col">
@@ -122,7 +136,8 @@
           <a href="#">Забронировать</a>
         </div>
         <div class="rating">
-          <!-- звезды -->
+          <!-- звезды размножить-->
+          <img src="img/star.svg" alt="Оценка" width="18" height="17">
           <p>Рейтинг:9,2</p>
         </div>
       </div>
@@ -130,16 +145,17 @@
   </ul>
 </main>
 <footer class="page-footer">
-  <p class="hashtag">#visitsedona</p>
-  <!-- прописать по доступности названия -->
-  <ul class="socials">
-    <li class="socials-item"><a href=""></a></li>
-    <li class="socials-item"><a href=""></a></li>
-    <li class="socials-item"><a href=""></a></li>
-  </ul>
-  <section class="copyright">
-    <p>Website by<a href="https://up.htmlacademy.ru/htmlcss/22" target="_blank"></a></p>
-  </section>
+      <p class="hashtag">#visitsedona</p>
+      <!-- прописать по доступности названия -->
+      <ul class="socials">
+        <li class="socials-item"><img src="img/t.svg" width="17" height="15" alt="Twitter"><a href=""></a></li>
+        <li class="socials-item"><img src="img/f.svg" width="12" height="22" alt="Facebook"><a href=""></a></li>
+        <li class="socials-item"><img src="img/y.svg" width="20" height="16" alt="Youtube"><a href=""></a></li>
+      </ul>
+      <section class="copyright">
+        <p>Website by<a href="https://up.htmlacademy.ru/htmlcss/22" target="_blank"></a></p>
+        <img src="img/logo_name.svg" width="115" height="41" alt="HTML academy">
+      </section>
 </footer>
 </div>
 </body>
